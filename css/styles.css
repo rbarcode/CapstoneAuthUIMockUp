@@ -42,6 +42,8 @@ body {
   display: none;
 }
 
+.wrapper .form-box.register {}
+
 .form-box h2 {
   font-size: 2rem;
   color: #fff;
@@ -195,7 +197,7 @@ body {
 
 .wrapper .bg-animate2 {
   position: absolute;
-  top: -5rem;
+  top: -6.25rem;
   left: 0;
 
   /* Dimensions from tutorial... do not work due to my modifications */

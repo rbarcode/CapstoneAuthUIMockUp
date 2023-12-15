@@ -16,21 +16,16 @@
     <div class="form-box login">
       <h2>Login</h2>
       <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
         <div class="input-box">
-          <div asp-validation-summary="ModelOnly"></div>
-          <div>
-            <input asp-for="Input.Email" aria-required="true" required />
-            <label asp-for="Input.Email">Email</label>
-            <span asp-asp-validation-for="Input.Email"></span>
-          </div>
+          <input asp-for="Input.Email" aria-required="true" required />
+          <label asp-for="Input.Email">Email</label>
+          <span asp-asp-validation-for="Input.Email"></span>
         </div>
         <div class="input-box">
-          <div asp-validation-summary="ModelOnly"></div>
-          <div>
-            <input asp-for="Input.Password" aria-required="true" type="password" required />
-            <label asp-for="Input.Password">Password</label>
-            <span asp-asp-validation-for="Input.Password"></span>
-          </div>
+          <input asp-for="Input.Password" aria-required="true" type="password" required />
+          <label asp-for="Input.Password">Password</label>
+          <span asp-asp-validation-for="Input.Password"></span>
         </div>
         <button id="login-submit" type="submit" class="btn">Login</button>
         <div class="logreg-link">
@@ -41,6 +36,32 @@
     <div class="info-text login">
       <h2>Welcome Back!</h2>
       <p>Did your brain cells get bored while you were on vacation from bowdlerizing?</p>
+    </div>
+
+    <div class="form-box register">
+      <h2>Register</h2>
+      <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="input-box">
+          <input asp-for="Input.Name" aria-required="true" required />
+          <label asp-for="Input.Name">Username</label>
+          <span asp-asp-validation-for="Input.Name"></span>
+        </div>
+        <div class="input-box">
+          <input asp-for="Input.Email" aria-required="true" required />
+          <label asp-for="Input.Email">Email</label>
+          <span asp-asp-validation-for="Input.Email"></span>
+        </div>
+        <div class="input-box">
+          <input asp-for="Input.Password" aria-required="true" type="password" required />
+          <label asp-for="Input.Password">Password</label>
+          <span asp-asp-validation-for="Input.Password"></span>
+        </div>
+        <button id="login-submit" type="submit" class="btn">Login</button>
+        <div class="logreg-link">
+          <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+        </div>
+      </form>
     </div>
   </div>
 
