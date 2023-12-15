@@ -40,13 +40,13 @@ body {
 .wrapper .form-box.login {
   top: 0;
   padding: 0 2.5rem;
-  display: none;
+  /* display: none; */
 }
 
 .wrapper .form-box.register {
   bottom: 0;
   padding: 0 2.5rem;
-  /* display: none; */
+  display: none;
 }
 
 .form-box h2 {
@@ -159,13 +159,14 @@ body {
   bottom: 0;
   text-align: right;
   padding: 150px 30px 40px;
-  display: none;
+  /* display: none; */
 }
 
 .wrapper .info-text.register {
   top: 0;
   text-align: right;
   padding: 0 30px 150px;
+  display: none;
 }
 
 .info-text.register h2 {
@@ -217,7 +218,7 @@ body {
   /* Alternative dimensions using skew instead of skewX */
   /* transform: rotate(90deg) skew(20deg); */
 
-  transform: rotate(0) skewX(0);
+  /* transform: rotate(0) skewX(0); */
 
   transform-origin: left;
 }
@@ -237,6 +238,7 @@ body {
   background: rgb(36, 36, 36);
   border-right: 3px solid #9d00ff;
 
-  transform: rotate(-40deg) skewX(25deg);
+  /* transform: rotate(-40deg) skewX(25deg); */
+  transform: rotate(-180deg) skewX(0deg);
   transform-origin: right;
 }
