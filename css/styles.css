@@ -249,19 +249,20 @@ body {
 
 .wrapper .bg-animate {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -4rem;
+  right: -9.5rem;
 
   /* Dimensions from tutorial... do not work due to my modifications */
   /* width: 37.5rem;
   height: 53.13rem; */
 
   width: 150%;
-  height: 150%;
+  height: 155%;
   background: linear-gradient(45deg, #081b29, #9d00ff);
   border-left: 3px solid #9d00ff;
 
   /* Dimensions from tutorial... altered due to my modifications */
+  transform: rotate(30deg) skewX(-40deg);
   transform: rotate(30deg) skewX(-40deg);
 
   /* Alternative dimensions using skew instead of skewX */
@@ -270,6 +271,12 @@ body {
   /* transform: rotate(0) skewX(0); */
 
   transform-origin: left;
+  transition: 1.25s ease;
+}
+
+.wrapper.active .bg-animate {
+  transform: rotate(0) skewX(0);
+  transition-delay: .3s;
 }
 
 
@@ -290,4 +297,10 @@ body {
   /* transform: rotate(-40deg) skewX(25deg); */
   transform: rotate(-180deg) skewX(0deg);
   transform-origin: right;
+  transition: 1.5s ease;
+}
+
+.wrapper.active .bg-animate2 {
+  transform: rotate(-40deg) skewX(25deg);
+  transition-delay: 1s;
 }
