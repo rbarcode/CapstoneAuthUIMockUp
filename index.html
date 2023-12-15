@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>SignInRegister Component</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <span class="bg-animate"></span>
+    <span class="bg-animate2"></span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form method="post">
+        <div class="input-box">
+          <div asp-validation-summary="ModelOnly"></div>
+          <div>
+            <input asp-for="Input.Email" aria-required="true" required />
+            <label asp-for="Input.Email">Email</label>
+            <span asp-asp-validation-for="Input.Email"></span>
+          </div>
+        </div>
+        <div class="input-box">
+          <div asp-validation-summary="ModelOnly"></div>
+          <div>
+            <input asp-for="Input.Password" aria-required="true" type="password" required />
+            <label asp-for="Input.Password">Password</label>
+            <span asp-asp-validation-for="Input.Password"></span>
+          </div>
+        </div>
+        <button id="login-submit" type="submit" class="btn">Login</button>
+        <div class="logreg-link">
+          <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="info-text login">
+      <h2>Welcome Back!</h2>
+      <p>Did your brain cells get bored while you were on vacation from bowdlerizing?</p>
+    </div>
+  </div>
+
+</body>
