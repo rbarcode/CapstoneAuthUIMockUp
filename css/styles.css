@@ -173,7 +173,14 @@ body {
   font-size: 3rem;
 }
 
-.info-text.register p, div, ol {
+.info-text.register .definition {
+  text-transform: lowercase;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.info-text.register .register-subtext {
+  text-align: left;
   color: white;
   font-size: 1.25rem;
 }
