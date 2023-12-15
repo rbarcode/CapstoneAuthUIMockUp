@@ -43,6 +43,41 @@ body {
   /* display: none; */
 }
 
+/* Slide up out of the top version: */
+
+/* .wrapper .form-box.login .animation {
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0);
+  transition: .7s ease;
+}
+
+.wrapper.active .form-box.login .animation {
+  transform: translateY(-50vh);
+  opacity: 0;
+  filter: blur(15px);
+  transition-delay: calc(.1s * var(--i));
+} */
+
+
+/* Slide off to the left version: */
+
+.wrapper .form-box.login .animation {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transition: .7s ease;
+}
+
+.wrapper.active .form-box.login .animation {
+  transform: translateX(-100vw);
+  opacity: 0;
+  filter: blur(15px);
+  transition-delay: calc(.1s * var(--i));
+}
+
+
+
 .wrapper .form-box.register {
   bottom: 0;
   padding: 0 2.5rem;
@@ -160,6 +195,20 @@ body {
   text-align: right;
   padding: 150px 30px 40px;
   /* display: none; */
+}
+
+.wrapper .info-text.login .animation {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transition: .7s ease;
+}
+
+.wrapper.active .info-text.login .animation {
+  transform: translateX(-100vw);
+  opacity: 0;
+  filter: blur(15px);
+  transition-delay: calc(.1s * var(--i));
 }
 
 .wrapper .info-text.register {
