@@ -94,6 +94,7 @@ body {
   transform: translateX(0);
   opacity: 1;
   filter: blur(0);
+  transition-delay: calc(.1s * var(--i));
 }
 
 
@@ -233,6 +234,16 @@ body {
 
 .wrapper .info-text.register .animation {
   transform: translateX(100vw);
+  opacity: 0;
+  filter: blur(15px);
+  transition: .7s ease;
+}
+
+.wrapper.active .info-text.register .animation {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transition-delay: calc(.1s * var(--i));
 }
 
 .info-text.register h2 {
