@@ -81,8 +81,21 @@ body {
 .wrapper .form-box.register {
   bottom: 0;
   padding: 0 2.5rem;
-  display: none;
 }
+
+.wrapper .form-box.register .animation {
+  transform: translateX(-100vw);
+  opacity: 0;
+  filter: blur(15px);
+  transition: .7s ease;
+}
+
+.wrapper.active .form-box.register .animation {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+}
+
 
 .form-box h2 {
   font-size: 2rem;
@@ -215,7 +228,11 @@ body {
   top: 0;
   text-align: right;
   padding: 0 30px 150px;
-  display: none;
+  pointer-events: none;
+}
+
+.wrapper .info-text.register .animation {
+  transform: translateX(100vw);
 }
 
 .info-text.register h2 {
@@ -263,7 +280,7 @@ body {
 
   /* Dimensions from tutorial... altered due to my modifications */
   transform: rotate(30deg) skewX(-40deg);
-  transform: rotate(30deg) skewX(-40deg);
+
 
   /* Alternative dimensions using skew instead of skewX */
   /* transform: rotate(90deg) skew(20deg); */
