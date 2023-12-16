@@ -67,6 +67,7 @@ body {
   opacity: 1;
   filter: blur(0);
   transition: .7s ease;
+  transition-delay: calc(.1s * var(--j));
 }
 
 .wrapper.active .form-box.login .animation {
@@ -81,6 +82,11 @@ body {
 .wrapper .form-box.register {
   bottom: 0;
   padding: 0 2.5rem;
+  pointer-events: none;
+}
+
+.wrapper.active .form-box.register {
+  pointer-events: auto;
 }
 
 .wrapper .form-box.register .animation {
@@ -88,6 +94,7 @@ body {
   opacity: 0;
   filter: blur(15px);
   transition: .7s ease;
+  transition-delay: calc(.1s * var(--j));
 }
 
 .wrapper.active .form-box.register .animation {
@@ -216,6 +223,7 @@ body {
   opacity: 1;
   filter: blur(0);
   transition: .7s ease;
+  transition-delay: calc(.1s * var(--j));
 }
 
 .wrapper.active .info-text.login .animation {
@@ -228,8 +236,12 @@ body {
 .wrapper .info-text.register {
   top: 0;
   text-align: right;
-  padding: 0 30px 150px;
+  padding: 5px 30px 160px;
   pointer-events: none;
+}
+
+.wrapper.active .info-text.register {
+  pointer-events: auto;
 }
 
 .wrapper .info-text.register .animation {
@@ -237,6 +249,7 @@ body {
   opacity: 0;
   filter: blur(15px);
   transition: .7s ease;
+  transition-delay: calc(.1s * var(--j));
 }
 
 .wrapper.active .info-text.register .animation {
@@ -260,7 +273,7 @@ body {
 .info-text.register .register-subtext {
   text-align: left;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .info-text h2 {
@@ -277,7 +290,7 @@ body {
 
 .wrapper .bg-animate {
   position: absolute;
-  top: -4rem;
+  top: -12rem;
   right: -9.5rem;
 
   /* Dimensions from tutorial... do not work due to my modifications */
@@ -285,7 +298,7 @@ body {
   height: 53.13rem; */
 
   width: 150%;
-  height: 155%;
+  height: 175%;
   background: linear-gradient(45deg, #081b29, #9d00ff);
   border-left: 3px solid #9d00ff;
 
@@ -300,6 +313,7 @@ body {
 
   transform-origin: left;
   transition: 1.25s ease;
+  transition-delay: 1.15s;
 }
 
 .wrapper.active .bg-animate {
@@ -326,6 +340,7 @@ body {
   transform: rotate(-180deg) skewX(0deg);
   transform-origin: right;
   transition: 1.5s ease;
+  transition-delay: .4s;
 }
 
 .wrapper.active .bg-animate2 {
